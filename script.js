@@ -39,48 +39,7 @@ header.classList.toggle('sticky', window.scrollY >100);
     navbar.classList.remove('active')
 };
 
-// // Get all the navigation links
-// const navLinks = document.querySelectorAll('.nav-links');
 
-// // Add a click event listener to each navigation link
-// navLinks.forEach(link => {
-//   link.addEventListener('click', () => {
-//     // Remove the active class from all the navigation links
-//     navLinks.forEach(link => link.classList.remove('active'));
-
-//     // Add the active class to the clicked navigation link
-//     link.classList.add('active');
-//   });
-// });
-
-// // Add a scroll event listener to the window
-// window.addEventListener('scroll', () => {
-//   // Get the current scroll position of the window
-//   const scrollPosition = window.scrollY;
-
-//   // Get the top offset of each section
-//   const sectionOffsets = Array.from(document.querySelectorAll('section')).map(section => ({
-//     id: section.id,
-//     offsetTop: section.offsetTop,
-//     height: section.offsetHeight
-//   }));
-
-//   // Get the id of the section that is currently in view
-//   const currentSectionId = sectionOffsets.reduce((acc, section) => {
-//     if (scrollPosition >= section.offsetTop - section.height / 2) {
-//       return section.id;
-//     } else {
-//       return acc;
-//     }
-//   }, sectionOffsets[0].id);
-
-//   // Remove the active class from all the navigation links
-//   navLinks.forEach(link => link.classList.remove('active'));
-
-//   // Add the active class to the navigation link of the current section
-//   const currentNavLink = document.querySelector(`.nav-links[href="#${currentSectionId}"]`);
-//   currentNavLink.classList.add('active');
-// });
 
 
 
